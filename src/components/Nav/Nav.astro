@@ -1,0 +1,16 @@
+---
+import ItemNav from "./ItemNav.astro";
+
+---
+
+<nav class="max-w-[240px] w-full  h-screen bg-[#181818] [grid-area:nav]" transition:persist>
+    <p class="text-xl  px-3 py-2">
+        <span class="block">Store</span> 
+        <span class="block ml-3">Gaming</span>
+    </p>
+    <ul class="py-3 overflow-hidden px-1">
+     <ItemNav icono="../../../img/usuario.png" title="Perfil" route="/product/1"/> 
+     <ItemNav icono="../../../img/buscar.png" title="Buscar" route="#"/> 
+     <ItemNav icono="../../../img/buscar.png" title="Home" route="/"/> 
+    </ul>
+</nav>

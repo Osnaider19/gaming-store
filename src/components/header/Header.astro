@@ -1,0 +1,33 @@
+---
+import IconCarrito from '../../Icons/IconCarrito.astro';
+import IconNotificacion from '../../Icons/IconNotificacion.astro';
+import InputSearch from './InputSearch.astro'
+import Cart from '../cart/Cart.astro'
+---
+
+
+
+<header class="flex justify-between items-center py-2 sticky top-0 z-50 bg-[#121212] [grid-area:header]" transition:persist>
+    <div class="px-3">
+        <InputSearch/>
+    </div>
+    <div class="flex justify-center items-center gap-x-4 px-5">
+        <button >
+            <IconNotificacion/>
+        </button>
+        <button id="button_cart">
+            <IconCarrito/>
+            <Cart/>
+        </button>
+    </div>
+</header>
+
+<script>
+    const cart = document.querySelector("#cart") as HTMLElement 
+    const buttonCart = document.querySelector("#button_cart") as HTMLElement
+    buttonCart.addEventListener("click" , ()=> {
+     cart.classList.toggle("translate-x-[400px]")
+     console.log(cart)
+    })
+</script>
+
