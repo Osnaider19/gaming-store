@@ -1,12 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { products } from '../../data/product';
-type AstroParams = {
-  id?: string;
-}
-const { id } = Astro.params as AstroParams
-const idN = parseInt(id);
-const producto = products.find((product) =>  idN === product.id)
+const { id } = Astro.params 
+const idParams = parseInt(id);
+const producto = products.find((product) =>  idParams === product.id)
 ---
 
 
