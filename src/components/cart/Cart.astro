@@ -1,6 +1,29 @@
+---
+import { CartProduct } from "./CartProduct";
+
+---
 
 
-<div class="h-screen w-[300px] bg-slate-500 absolute top-[56px] right-0 z-30 translate-x-[400px] transition-transform duration-300" id="cart">
 
-</div>
+<section class="h-screen w-[400px] bg-[#181818] absolute top-[56px] right-0 z-30 translate-x-[400px] transition-transform duration-300 p-1 overflow-y-auto" id="cart" transition:persist>
+
+
+    <CartProduct client:load />
+
+</section>
+
+<style>
+
+    
+#cart::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+#cart::-webkit-scrollbar-thumb{
+    background-color: #A100ED;
+    border-radius: 20px;
+    width: 10px;
+   
+}
+</style>
 

@@ -9,10 +9,12 @@ type Product = {
 export const products: Product[] = [
     {
       id : 1,
-      name: "mouse",
+      name: "Mouse gamer",
       price: 10.99,
       type: "mouse",
       imagen: "../../img/mouse.png"
+      // description : "Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas, poniendo foco en la innovación y la calidad. Su objetivo es crear momentos verdaderamente únicos y significativos para sus usuarios. Los mouses Logitech se adaptan a la forma de tu mano para proporcionarte horas de comodidad. Sin necesidad de mover el brazo para deslizar el cursor, tu mano se fatigará menos. Son ideales para cualquier espacio de trabajo y quienes tienen la mesa llena de diversos objetos."
+
     },
     {
       id : 2,
@@ -57,7 +59,7 @@ export const products: Product[] = [
       imagen: "../../img/portatil.png"
     },
     {
-      id : 7,
+      id : 8,
       name: "audífonos",
       price: 700,
       type: "audífonos",

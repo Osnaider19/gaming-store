@@ -1,5 +1,6 @@
 ---
 import { products  } from "../../data/product";
+import { ButtonAddToCart } from "./ButtonAddToCart";
 ---
 
 {
@@ -7,19 +8,17 @@ import { products  } from "../../data/product";
  <li class="w-[220px] bg-[#ffffff10] flex flex-col justify-center rounded-md px-3 overflow-hidden py-3">
   <a href={`/product/${id}`}> 
        <div class="w-full max-h-[220px] overflow-hidden">
-        <img src={imagen} alt="" class="w-full h-[150px] object-contain ">
+        <img src={imagen} alt="" class="w-full h-[150px] object-contain " transition:name={`imagen producto ${id}`}>
        </div>
        <div>
-        <p class="text-center  font-semibold text-xl capitalize">{name}</p>
+        <p class="text-center  font-semibold text-xl capitalize" transition:name={`text producto ${id}`}>{name}</p>
         <p class="text-center">{type}</p>
         <p class="text-center  font-semibold">${price}</p>
        </div>
-        <div class="flex justify-center items-center w-full py-3 overflow-hidden">
-            <button class="bg-[#A100ED] py-2 px-4 rounded-md z-10">
-                add to cart
-            </button>
+       </a>
+        <div class="flex justify-center items-center w-full py-3 overflow-hidden ">
+            <ButtonAddToCart id={id} client:load/>
         </div>    
-      </a>
   </li>
   ))
 }
