@@ -1,11 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import { products } from '../../data/product';
+type AstroParams = {
+  id?: string;
+}
+const { id } = Astro.params as AstroParams
+const idN = parseInt(id);
+const producto = products.find((product) =>  idN === product.id)
 ---
 
 
 <Layout title='producto'>
-
-<main class="h-screen w-full flex justify-center items-center bg-[#121212] overflow-hidden">
-    hola
-</main>
+    <div class="w-full bg-slate-500 px-3 py-4">
+        <article class="flex gap-x-4">
+            <div class="w-[250px] h-[250px] bg-red-400">
+                <img src={producto?.imagen} alt="" class="w-full h-full object-contain" transition:name={`imagen producto ${id}`}>
+            </div>
+            <div class="flex justify-center items-center">
+                <div>
+                    <p class="text-5xl font-semibold capitalize" transition:name={`text producto ${id}`}>{producto?.name}</p>
+                   <p class="py-3 text-2xl">${producto?.price}</p>
+                </div>
+            </div>
+        </article>
+    </div>
 </Layout>
