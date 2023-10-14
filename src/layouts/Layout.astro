@@ -24,7 +24,7 @@ const { title } = Astro.props;
 		<div class="layout">
 			<Nav />
 			<Header transition:persist/>
-			<main class="relative h-screen bg-[#121212] w-full overflow-y-auto overflow-hidden [grid-area:main]" id="main">
+			<main class="relative h-screen  w-full overflow-y-auto overflow-hidden [grid-area:main]" id="main">
 				<slot />
 			</main>
 		</div>
@@ -36,6 +36,7 @@ const { title } = Astro.props;
 	}
 	body {
 	color: white;
+	background-color: #121212;
 	}
 
 	.layout {

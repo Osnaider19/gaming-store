@@ -18,7 +18,7 @@ export const CartProduct = () => {
                 className="w-full h-full object-contain object-center "
               />
             </div>
-            <div className="min-w-[47%]  bg-red-400 h-full">
+            <div className="min-w-[47%]   h-full">
               <p className="font-semibold capitalize line-clamp-1">{name}</p>
               <p className="line-clamp-1">${price}</p>
               <p className="line-clamp-1">{amount}</p>

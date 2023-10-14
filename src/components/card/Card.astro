@@ -5,10 +5,10 @@ import { ButtonAddToCart } from "./ButtonAddToCart";
 
 {
  products.map(({imagen , name , price , type , id}) => (
- <li class="w-[220px] bg-[#ffffff10] flex flex-col justify-center rounded-md px-3 overflow-hidden py-3">
+ <li class="w-[220px]  bg-[#ffffff20] flex flex-col justify-center rounded-md  overflow-hidden  p-3">
   <a href={`/product/${id}`}> 
-       <div class="w-full max-h-[220px] overflow-hidden">
-        <img src={imagen} alt="" class="w-full h-[150px] object-contain " transition:name={`imagen producto ${id}`}>
+       <div class="w-full max-h-[220px] overflow-hidden ">
+        <img src={imagen} alt="" class="w-full h-[150px] object-contain mb-3" transition:name={`imagen producto ${id}`}>
        </div>
        <div>
         <p class="text-center  font-semibold text-xl capitalize" transition:name={`text producto ${id}`}>{name}</p>
