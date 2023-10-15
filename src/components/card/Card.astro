@@ -1,8 +1,7 @@
 ---
-import { products  } from "../../data/product";
 import { ButtonAddToCart } from "./ButtonAddToCart";
+import { products } from "../../data/product";
 ---
-
 {
  products.map(({imagen , name , price , type , id}) => (
  <li class="w-[220px]  bg-[#ffffff20] flex flex-col justify-center rounded-md  overflow-hidden  p-3">
@@ -22,3 +21,7 @@ import { ButtonAddToCart } from "./ButtonAddToCart";
   </li>
   ))
 }
+
+
+
+

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useCartStore } from '../../store/cartStore'
 
 export const ButtonAddToCart = ({id } : {id : number}) => {
