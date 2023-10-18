@@ -8,9 +8,9 @@ const producto = products.find((product) =>  idParams === product.id)
 
 
 <Layout title='producto'>
-    <div class="w-full bg-slate-500 px-3 py-4">
+    <div class="w-full px-3 py-4">
         <article class="flex gap-x-4">
-            <div class="w-[250px] h-[250px] bg-red-400">
+            <div class="w-[250px] h-[250px] bg-[#ffffff20] rounded-md px-4"> 
                 <img src={producto?.imagen} alt="" class="w-full h-full object-contain" transition:name={`imagen producto ${id}`}>
             </div>
             <div class="flex justify-center items-center">
@@ -20,5 +20,9 @@ const producto = products.find((product) =>  idParams === product.id)
                 </div>
             </div>
         </article>
+        <section>
+        <h2 class="py-3 font-semibold text-3xl">Description</h2>
+           <p class="text-left text-xl">{producto?.description}</p>
+        </section>
     </div>
 </Layout>

@@ -7,16 +7,7 @@ export const products: ProductTypes[] = [
       type: "mouse",
       imagen: "../../img/mouse.png",
       categories : "mouse",
-      description: `Para trabajar desde casa con la computadora o aprovechar los momentos de ocio, necesitas comodidad y facilidad de movimiento. Con tu Zelotes T80 encuentra eso que buscas en un solo aparato con la mejor tecnología.
-
-      Adaptado a tus movimientos
-      El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla.
-      
-      La funcionalidad al alcance de tu mano
-      El sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales.
-      
-      Apto para fácil traslado
-      Navega rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.`,
+      description: `Para trabajar desde casa con la computadora o aprovechar los momentos de ocio, necesitas comodidad y facilidad de movimiento. Con tu Zelotes T80 encuentra eso que buscas en un solo aparato con la mejor tecnología. Adaptado a tus movimientos\nEl mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla. La funcionalidad al alcance de tu mano\nEl sistema de detección de movimiento óptico te permitirá mover el cursor de una manera más precisa y sensible que en los sistemas tradicionales. Apto para fácil traslado\nNavega rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.`,
     },
     {
       id : 2,
