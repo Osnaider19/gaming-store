@@ -21,7 +21,7 @@ export const CartProduct = () => {
             <div className="min-w-[47%]   h-full">
               <p className="font-semibold capitalize line-clamp-1">{name}</p>
               <p className="line-clamp-1">${price}</p>
-              <p className="line-clamp-1">{amount}</p>
+              <p className="line-clamp-1">amount :{amount}</p>
             </div>
             <div className="flex w-full  ">
               <button

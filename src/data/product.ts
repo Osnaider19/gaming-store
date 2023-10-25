@@ -15,7 +15,7 @@ export const products: ProductTypes[] = [
       price: 19.99,
       type: "keyboard",
       imagen: "../../img/teclado.png",
-      categories : "",
+      categories : "keyboard",
       description : "",
     },
     {
@@ -24,7 +24,7 @@ export const products: ProductTypes[] = [
       price: 300.99,
       type: "ps4",
       imagen: "../../img/ps4.png",
-      categories : "",
+      categories : "playstation",
       description : "",
     },
     {
